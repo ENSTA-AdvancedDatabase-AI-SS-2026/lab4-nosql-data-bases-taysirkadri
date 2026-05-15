@@ -1,0 +1,19 @@
+# SIMULATED GDS output (do NOT present as real results)
+
+# Top 10 by degree (simulated)
+1. Ahmed - degree=12
+2. Fatima - degree=11
+3. Karim - degree=10
+4. Yasmina - degree=9
+5. Sara - degree=8
+6. Mehdi - degree=7
+7. Lina - degree=7
+8. Youcef - degree=6
+9. Rania - degree=6
+10. Amine - degree=5
+
+# Louvain communities (simulated)
+- total_communities: 4
+- sizes: [18, 12, 10, 10]
+
+# Example interpretation (simulated): community 0 is the largest and groups students from USTHB and UMBB with strong intra-links; community 1 groups USTO students active in Club Web, etc.

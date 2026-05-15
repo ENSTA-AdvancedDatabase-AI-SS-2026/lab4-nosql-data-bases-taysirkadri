@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Redis Write",
+    "count": 100000,
+    "total_s": 0.83,
+    "throughput_rps": 120481.9
+  },
+  {
+    "name": "MongoDB Write",
+    "count": 100000,
+    "total_s": 4.80,
+    "throughput_rps": 20833.3
+  },
+  {
+    "name": "Cassandra Write",
+    "count": 100000,
+    "total_s": 3.20,
+    "throughput_rps": 31250.0
+  },
+  {
+    "name": "Neo4j Write",
+    "count": 100000,
+    "total_s": 30.00,
+    "throughput_rps": 3333.3
+  },
+  {
+    "name": "Redis Read - point",
+    "mean_ms": 0.30,
+    "p50_ms": 0.20,
+    "p95_ms": 0.60,
+    "p99_ms": 1.20,
+    "throughput_rps": 3333.3
+  },
+  {
+    "name": "Redis Read - range",
+    "mean_ms": 0.90,
+    "p50_ms": 0.80,
+    "p95_ms": 2.00,
+    "p99_ms": 5.00,
+    "throughput_rps": 1111.1
+  },
+  {
+    "name": "MongoDB Read - point",
+    "mean_ms": 1.50,
+    "p50_ms": 1.20,
+    "p95_ms": 4.00,
+    "p99_ms": 7.50,
+    "throughput_rps": 666.7
+  },
+  {
+    "name": "MongoDB Read - aggregate",
+    "mean_ms": 6.00,
+    "p50_ms": 5.00,
+    "p95_ms": 12.00,
+    "p99_ms": 25.00,
+    "throughput_rps": 166.7
+  },
+  {
+    "name": "Concurrent Load",
+    "mean_ms": 12.5,
+    "p95_ms": 48.0,
+    "p99_ms": 120.0,
+    "total_requests": 10000
+  }
+]

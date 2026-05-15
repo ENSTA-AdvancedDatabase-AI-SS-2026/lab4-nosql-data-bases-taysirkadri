@@ -60,13 +60,11 @@ WITH replication = {'class': 'NetworkTopologyStrategy',
 AND durable_writes = true;
 
 -- Table principale des mesures
--- TODO: à compléter en Ex1
 
--- Table pour les alertes
--- TODO: à compléter en Ex1
+-- Voir starter/ex1_schema.cql pour la définition complète de `alertes_par_wilaya`
 
 -- Table des agrégats horaires (pré-calculés)
--- TODO: à compléter en Ex1
+-- Voir starter/ex1_schema.cql pour la définition complète de `agregats_horaires`
 ```
 
 ---

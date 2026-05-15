@@ -115,7 +115,15 @@ db.patients.aggregate([
 db.createCollection("patients", {
   validator: {
     $jsonSchema: {
-      // TODO: Définir required fields, types pour les champs critiques
+      // Exemple minimal de validation : champs critiques requis
+      bsonType: "object",
+      required: ["cin", "nom", "prenom", "dateNaissance"],
+      properties: {
+        cin: { bsonType: "string" },
+        nom: { bsonType: "string" },
+        prenom: { bsonType: "string" },
+        dateNaissance: { bsonType: "date" }
+      }
     }
   }
 })

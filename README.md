@@ -66,6 +66,40 @@ docker-compose ps
 
 ---
 
+## 🐳 Docker Compose (démarrage rapide)
+
+Démarrez tous les services avec Docker Compose depuis la racine du projet.
+
+```bash
+# Démarrer en arrière-plan
+docker-compose up -d
+
+# Arrêter et supprimer les conteneurs
+docker-compose down
+
+# Voir les logs d'un service (ex. redis)
+docker-compose logs -f redis
+```
+
+Quelques vérifications utiles:
+
+```bash
+# Redis
+docker-compose exec redis redis-cli ping   # PONG attendu
+
+# MongoDB
+docker-compose exec mongodb mongosh --eval "db.runCommand({ ping: 1 })"
+
+# Cassandra (cqlsh peut mettre du temps à démarrer)
+docker-compose exec cassandra cqlsh -e 'describe keyspaces'
+
+# Neo4j: ouvrir http://localhost:7474 (identifiants: neo4j / password123)
+```
+
+Le fichier `docker-compose.yml` à la racine lance Redis, MongoDB, Cassandra et Neo4j avec des configurations exemples. C'est la méthode la plus rapide pour exécuter le TP sans installer chaque service localement.
+
+---
+
 ## 📝 Consignes
 1. Travailler dans le dossier `starter/` de chaque TP
 2. Committer régulièrement avec des messages clairs
